@@ -1,0 +1,81 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Blog Container */
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Blog Header */
+.blog-header {
+    text-align: center;
+    background-color: #ffcc00; /* Yellow background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-header h1 {
+    color: #d50000; /* Red text color */
+}
+
+/* Blog Content */
+.blog-content {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 20px;
+}
+
+.blog-post {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    color: #d50000; /* Red text color */
+    margin-bottom: 15px;
+}
+
+.blog-post p {
+    color: #555;
+}
+
+/* Blog Footer */
+.blog-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #ffcc00; /* Yellow background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Medium Screens: 2 Columns */
+@media (min-width: 768px) {
+    .blog-content {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+}
+
+/* For Large Screens: 3 Columns */
+@media (min-width: 1024px) {
+    .blog-content {
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+    }
+}
